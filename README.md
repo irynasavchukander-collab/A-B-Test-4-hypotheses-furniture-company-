@@ -57,7 +57,7 @@ Unit of analysis: session (`ga_session_id`). No missing values.
 
 ## Key Results
 
-![Metric Change Heatmap](images/metric_change_heatmap.png)
+![Metric Change Heatmap](images/Metric_Change_by_Test.png)
 *Heatmap of relative metric changes (test vs. control) across all four tests. Green = positive, red = negative. Test 1 shows the most consistent positive effect across funnel metrics.*
 
 **Test 1 — ✅ Roll out | H₁ Confirmed**  
@@ -65,7 +65,7 @@ Simplified checkout increased payment conversion by +12.54% (p < 0.001),
 shipping info by +6.56% (p = 0.009), and checkout starts by +6.66% (p = 0.003). 
 No effect on final orders — post-payment drop-off warrants further investigation.
 
-![Test 1 Conversion Rate Control vs Test](images/test1_conversion_bar.png)
+![Test 1 Conversion Rate Control vs Test](images/Test_1_Conversion_Rate.png)
 *Conversion rates for control vs. test group across all 8 metrics in Test 1. Payment and shipping steps show the strongest lift.*
 
 **Test 2 — ⚠️ Investigate | Mixed signals**  
