@@ -4,7 +4,7 @@
 ## Overview
 This project evaluates the impact of four independent UX experiments 
 conducted on a global furniture e-commerce platform during peak season 
-(November 2020 – January 2021). Using SQL/BigQuery for data extraction 
+(November 2020 - January 2021). Using SQL/BigQuery for data extraction 
 and Python for statistical analysis, the project measures how checkout 
 redesign, promotional banner changes, personalization, and registration 
 gates affect 8 key funnel and promotion metrics.
@@ -60,7 +60,7 @@ Unit of analysis: session (`ga_session_id`). No missing values.
 ![Metric Change Heatmap](images/Metric_Change_by_Test.png)
 *Heatmap of relative metric changes (test vs. control) across all four tests. Green = positive, red = negative. Test 1 shows the most consistent positive effect across funnel metrics.*
 
-**Test 1 — ✅ Roll out | H₁ Confirmed**  
+**Test 1 —  Roll out | H₁ Confirmed**  
 Simplified checkout increased payment conversion by +12.54% (p < 0.001), 
 shipping info by +6.56% (p = 0.009), and checkout starts by +6.66% (p = 0.003). 
 No effect on final orders — post-payment drop-off warrants further investigation.
@@ -68,17 +68,17 @@ No effect on final orders — post-payment drop-off warrants further investigati
 ![Test 1 Conversion Rate Control vs Test](images/Test_1_Conversion_Rate.png)
 *Conversion rates for control vs. test group across all 8 metrics in Test 1. Payment and shipping steps show the strongest lift.*
 
-**Test 2 — ⚠️ Investigate | Mixed signals**  
+**Test 2 —  Investigate | Mixed signals**  
 Sticky banner increased add_to_cart by +9.75% (p < 0.001) but reduced 
 promotion views by -1.36% (p = 0.004). The banner acts as a CTA rather 
 than a discovery surface — requires segmentation before rollout.
 
-**Test 3 — ❌ Reject | H₁ Refuted**  
+**Test 3 —  Reject | H₁ Refuted**  
 Personalized promotions caused a decline across funnel and promo metrics: 
 begin_checkout -3.35% (p = 0.012), add_to_cart -3.06% (p < 0.001), 
 view_promotion -1.06% (p = 0.017). Personalization algorithm needs revision.
 
-**Test 4 — ❌ Reject | H₁ Refuted**  
+**Test 4 —  Reject | H₁ Refuted**  
 Mandatory registration gate backfired: new_accounts fell by -3.36% 
 (p = 0.018) and begin_checkout by -2.35% (p = 0.046). Users abandoned 
 sessions when faced with a forced registration wall.
@@ -87,10 +87,10 @@ sessions when faced with a forced registration wall.
 
 | Test | Decision | Key Reason |
 |---|---|---|
-| Test 1 | ✅ Roll out | Significant positive funnel improvement |
-| Test 2 | ⚠️ Investigate | Mixed signals — CTA up, visibility down |
-| Test 3 | ❌ Reject | Negative effect on funnel and cart |
-| Test 4 | ❌ Reject | Registration gate harms both acquisition and conversion |
+| Test 1 |  Roll out | Significant positive funnel improvement |
+| Test 2 |  Investigate | Mixed signals — CTA up, visibility down |
+| Test 3 |  Reject | Negative effect on funnel and cart |
+| Test 4 |  Reject | Registration gate harms both acquisition and conversion |
 
 ## Limitations
 Results reflect peak-season behavior (Nov–Jan) and may not generalize 
